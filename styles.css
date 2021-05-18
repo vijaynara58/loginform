@@ -127,26 +127,36 @@
   }
 
 
-  .signin-button {
-    font-weight: #E67300;
-    outline: none;
-    border:none;
-    cursor: pointer;
-    width:100%;
-    height: 60px;
-    border-radius: 30px;
-    font-size: 20px;
-    font-weight: 700;
-    font-family: 'Lato', sans-serif;
-    color:#fff;
-    text-align: center;
-    background: #E67300;
-    box-shadow: 3px 3px 8px #b1b1b1,
-                -3px -3px 8px #ffffff;
-    transition: 0.5s;
+.signin {
+    border: none;
+    background: rgb(251,33,117);
+      background: linear-gradient(0deg, rgba(251,33,117,1) 0%, rgba(234,76,137,1) 100%);
+      color: #fff;
+      overflow: hidden;
   }
-  .signin-button:hover {
-    background:#a3570b;
+  .signin:hover {
+      text-decoration: none;
+      color: #fff;
+  }
+  .signin:before {
+      position: absolute;
+      content: '';
+      display: inline-block;
+      top: -180px;
+      left: 0;
+      width: 30px;
+      height: 100%;
+      background-color: #fff;
+      animation: shiny-btn1 3s ease-in-out infinite;
+  }
+  .signin:hover{
+    opacity: .7;
+  }
+  .signin:active{
+    box-shadow:  4px 4px 6px 0 rgba(255,255,255,.3),
+                -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+      inset -4px -4px 6px 0 rgba(255,255,255,.2),
+      inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
   }
   
   .link {
